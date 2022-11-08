@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Akario Store</title>
+
+    <link rel="stylesheet" href="public/css/adminpage.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister:400">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/store.css" media="screen">
+</head>
+
+
+<body>
+    <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false">ِAkario Store🛒</h1>
+    
+    <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false"
+        style="font-size: 1.5rem;">Roulette</h1>
+    <!--قسم الروليت-->
+    <div class="container">
+        <!-- الروليت-->
+        <div class="card" style="width: 400px;">
+            <div class="card-top background-red">
+                <h3>روليت</h3>
+                <p class="card-subtag">عجلة الحظ قد تربح الكثير واضعاف ما صرفت لكن قد تكون العواقب وخيمة اختبر حظك</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">Diamond 💎</span>
+                        <span class="time-frame">مرة بالاسبوع على الاكثر</span>
+                        <span class="cost">1500k</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">Gold 🥇</span>
+                        <span class="time-frame">مرتان في اليوم على الاكثر</span>
+                        <span onclick="alertFull(2,240)" class="cost">450k</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">Silver 🥈</span>
+                        <span class="time-frame">مرتان في اليوم على الاكثر</span>
+                        <span onclick="alertFull(3,180)" class="cost">150k</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false"
+        style="font-size: 1.5rem;">Warnings</h1>
+    <!--قسم الانذاراتا-->
+    <div class="container">
+        <!-- حذف انذار-->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>حذف انذار</h3>
+                <p class="card-subtag">حذف اي انذار بشرط مرور على الاقل ثلاث ايام من صدوره</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">انذار</span>
+                        <span class="cost">300k/انذار</span>
+                        <span class="old_cost">450k/انذار</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">2</span>
+                        <span class="time-frame">انذاران</span>
+                        <span onclick="alertFull(2,240)" class="cost">240k/انذار</span>
+                        <span onclick="alertFull(2,360)" class="old_cost">360k/انذار</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">انذارات</span>
+                        <span onclick="alertFull(3,180)" class="cost">180k/انذار</span>
+                        <span onclick="alertFull(3,270)" class="old_cost">270k/انذار</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- حذف تنبيه -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>حذف تنبيه</h3>
+                <p class="card-subtag">حذف اي تنبيه بشرط مرور على الاقل يوم من صدوره</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">تنبيه</span>
+                        <span class="cost">150k/تنبيه</span>
+                        <span class="old_cost">250k/تنبيه</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">2</span>
+                        <span class="time-frame">تنبيهان</span>
+                        <span onclick="alertFull(2,240)" class="cost">120k/تنبيه</span>
+                        <span onclick="alertFull(2,360)" class="old_cost">180k/تنبيه</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">تنبيهات</span>
+                        <span onclick="alertFull(3,180)" class="cost">90k/تنبيه</span>
+                        <span onclick="alertFull(3,270)" class="old_cost">135k/تنبيه</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- قسم البيلي -->
+    <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false"
+        style="font-size: 1.5rem;">Belly</h1>
+    <div class="container">
+        <!-- بيلي مضاعف -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>بيلي مضاعف</h3>
+                <p class="card-subtag">يتم مضاعفة البيلي المكتسب من الفعاليات والمسابقات ايضا</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">300k/يوم</span>
+                        <span class="old_cost">450k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,240)" class="cost">240k/يوم</span>
+                        <span onclick="alertFull(3,360)" class="old_cost">360k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">7</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(7,180)" class="cost">180k/يوم</span>
+                        <span onclick="alertFull(7,270)" class="old_cost">270k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Free day To you -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>free day for only you</h3>
+                <p class="card-subtag">يتم اعطائك الصلاحية في التحدث وارسال صور خارج نطاق الانمي في هذه الايام لك فقط
+                </p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">500k/يوم</span>
+                        <span class="old_cost">750k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,400)" class="cost">400k/يوم</span>
+                        <span onclick="alertFull(3,600)" class="old_cost">600k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,180)" class="cost">300k/يوم</span>
+                        <span onclick="alertFull(5,270)" class="old_cost">450k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Free day for every one -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>free day for everyone</h3>
+                <p class="card-subtag">يتم الحميع الصلاحية في التحدث وارسال صور خارج نطاق الانمي في هذه الايام</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">1000k/يوم</span>
+                        <span class="old_cost">1500k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,800)" class="cost">800k/يوم</span>
+                        <span onclick="alertFull(3,1200)" class="old_cost">1200k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,600)" class="cost">600k/يوم</span>
+                        <span onclick="alertFull(5,900)" class="old_cost">900k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- قسم الالقاب -->
+    <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false"
+        style="font-size: 1.5rem;">Names</h1>
+    <div class="container">
+        <!-- تغيير لقب -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>تغير القب</h3>
+                <p class="card-subtag">تغغير لقبك الاساسي سواء بشكل مؤقت او نهائي -تبديل الالقاب 400000 من الطرفين</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">150k/يوم</span>
+                        <span class="old_cost">225k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,120)" class="cost">120k/يوم</span>
+                        <span onclick="alertFull(3,180)" class="old_cost">180k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">∞</span>
+                        <span class="time-frame">ايام</span>
+                        <span class="cost">500k</span>
+                        <span class="old_cost">750k</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- وضع لقب في وصف القروب -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>وضع لقب في وصف القروب</h3>
+                <p class="card-subtag">وضع لقبك في وصف القروب الاساسي</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">100k/يوم</span>
+                        <span class="old_cost">150k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,80)" class="cost">80k/يوم</span>
+                        <span onclick="alertFull(3,120)" class="old_cost">120k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,60)" class="cost">60k/يوم</span>
+                        <span onclick="alertFull(5,90)" class="old_cost">90k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- وضع لقب جانب اسم القروب -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>وضع لقب جانب اسم القروب</h3>
+                <p class="card-subtag">وضع لقبك جانب اسم القروب الاساسي</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">200k/يوم</span>
+                        <span class="old_cost">300k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,160)" class="cost">160k/يوم</span>
+                        <span onclick="alertFull(3,240)" class="old_cost">240k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,120)" class="cost">120k/يوم</span>
+                        <span onclick="alertFull(5,180)" class="old_cost">180k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- تغيير صورة عرض الاساسي -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>تغيير صورة عرض الاساسي</h3>
+                <p class="card-subtag">في حال كان قد تم تغيير صورة العرض من قبل شخص اخر قبل ان تنتهي مدته تعويضه 100 عن
+                    كل يوم تبقى له</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">200k/يوم</span>
+                        <span class="old_cost">300k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,160)" class="cost">160k/يوم</span>
+                        <span onclick="alertFull(3,240)" class="old_cost">240k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,120)" class="cost">120k/يوم</span>
+                        <span onclick="alertFull(5,180)" class="old_cost">180k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- تغيير صورة عرض الاعلانات -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>تغيير صورة عرض الاعلانات</h3>
+                <p class="card-subtag">في حال كان قد تم تغيير صورة العرض من قبل شخص اخر قبل ان تنتهي مدته تعويضه 50 عن
+                    كل يوم تبقى له</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">150k/يوم</span>
+                        <span class="old_cost">225k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">3</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(3,120)" class="cost">120k/يوم</span>
+                        <span onclick="alertFull(3,180)" class="old_cost">180k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,90)" class="cost">90k/يوم</span>
+                        <span onclick="alertFull(5,135)" class="old_cost">135k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- حجز لقب -->
+        <div class="card">
+            <div class="card-top background-red">
+                <h3>حجز لقب</h3>
+                <p class="card-subtag">يمكنك حجز لقب امدة حيث في هذه المدة لا يمكن لاحد ان يغير لقبه اليها او يسجل عضو
+                    بها الا بعد موافقتك</p>
+            </div>
+            <div class="options">
+                <ul class="option-list">
+                    <li class="option">
+                        <span class="number">1</span>
+                        <span class="time-frame">يوم</span>
+                        <span class="cost">250k/يوم</span>
+                        <span class="old_cost">375k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">5</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(5,200)" class="cost">200k/يوم</span>
+                        <span onclick="alertFull(5,300)" class="old_cost">300k/يوم</span>
+                    </li>
+                    <li class="option">
+                        <span class="number">10</span>
+                        <span class="time-frame">ايام</span>
+                        <span onclick="alertFull(10,160)" class="cost">160k/يوم</span>
+                        <span onclick="alertFull(10,240)" class="old_cost">240k/يوم</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript">
+        function alertFull(times, cost) {
+            Swal.fire({
+                title: "التكلفة الكاملة ",
+                text: (times * cost) + "k"
+            })
+        }
+    </script>
+</body>
+
+</html>

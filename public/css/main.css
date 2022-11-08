@@ -1,0 +1,300 @@
+.u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("/public/images/papers.co-ar19-red-river-illustration-art-anime-35-3840x2160-4k-wallpaper.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 800px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 30px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 40px auto 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 506px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 239px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 3.75rem;
+  }
+}.u-section-2 {
+  background-image: linear-gradient(to right, #e68387, #a35559);
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 638px;
+}
+
+.u-section-2 .u-layout-wrap-1 {
+  margin: 0 auto;
+}
+
+.u-section-2 .u-layout-cell-1 {
+  min-height: 638px;
+}
+
+.u-section-2 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-2 .u-text-1 {
+  font-size: 3rem;
+  margin: 132px 0 0;
+}
+
+.u-section-2 .u-line-1 {
+  transform-origin: left center;
+  border-style: solid;
+  width: 101px;
+  height: 7px;
+  margin: 23px auto 0;
+}
+
+.u-section-2 .u-text-2 {
+  margin: 23px 0 0;
+}
+
+.u-section-2 .u-image-1 {
+  min-height: 638px;
+  background-image: url("/public/images/toppng.com-naruto-250x600.png");
+  background-position: 50% 50%;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 526px;
+  }
+
+  .u-section-2 .u-layout-wrap-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-2 .u-layout-cell-1 {
+    min-height: 526px;
+  }
+
+  .u-section-2 .u-image-1 {
+    min-height: 526px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 403px;
+  }
+
+  .u-section-2 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-2 .u-text-1 {
+    font-size: 2.25rem;
+  }
+
+  .u-section-2 .u-image-1 {
+    min-height: 403px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 633px;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-top: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-image-1 {
+    min-height: 533px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 436px;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-top: 30px;
+  }
+
+  .u-section-2 .u-image-1 {
+    min-height: 336px;
+  }
+}.u-section-3 {
+  background-image: none;
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 682px;
+}
+
+.u-section-3 .u-layout-wrap-1 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.u-section-3 .u-image-1 {
+  min-height: 400px;
+  background-image: url("/public/images/toppng.com-hinata-hinatahyuga-naruto-freetoedit-hinata-hot-385x7981.png");
+  background-position: 50% 50%;
+}
+
+.u-section-3 .u-container-layout-1 {
+  padding: 0 30px;
+}
+
+.u-section-3 .u-layout-cell-2 {
+  min-height: 622px;
+}
+
+.u-section-3 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-3 .u-text-1 {
+  margin: 112px auto 0;
+}
+
+.u-section-3 .u-text-2 {
+  margin: 13px auto 0;
+}
+
+.u-section-3 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 38px auto 0;
+  padding: 10px 36px 10px 35px;
+}
+
+.u-section-3 .u-btn-2 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 20px auto 0;
+  padding: 10px 42px 10px 41px;
+}
+
+.u-section-3 .u-btn-3 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 20px auto 0;
+  padding: 10px 39px 10px 38px;
+}
+
+.u-section-3 .u-btn-4 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 20px auto 0;
+  padding: 10px 31px 10px 30px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 573px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    position: relative;
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 330px;
+  }
+
+  .u-section-3 .u-layout-cell-2 {
+    min-height: 513px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 313px;
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 253px;
+  }
+
+  .u-section-3 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 540px;
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 380px;
+  }
+
+  .u-section-3 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 399px;
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 239px;
+  }
+}

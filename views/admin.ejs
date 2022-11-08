@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>admin page</title>
+  <link href="public/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/adminpage.css" media="screen">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister:400">
+</head>
+  <!-- role section  -->
+<body>
+  <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false">Admin roles</h1>
+  <div class="container bootstrap snippets bootdey">
+    <% for( let role of roles) {%>
+    <div class="col-sm-4">
+      <!-- Begin user profile -->
+      <div class="box-info text-center user-profile-2">
+        <div class="user-profile-inner">
+          <h5><%= role.title%></h5>
+          <!-- User button -->
+          <div class="user-button">
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" onclick="myAlert('<%= String(role.role)%>')" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> عرض </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%}%>
+
+
+  </div>
+  <!-- event section  -->
+  <h1 class="u-align-center u-custom-font u-text u-text-default u-text-1" spellcheck="false">Admin Event</h1>
+
+  <div class="container bootstrap snippets bootdey">
+    <% for( let event of events) {%>
+    <div class="col-sm-4">
+      <!-- Begin user profile -->
+      <div class="box-info text-center user-profile-2">
+        <div class="user-profile-inner">
+          <h5><%= event.title%></h5>
+          <!-- User button -->
+          <div class="user-button">
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button" onclick="myAlert('<%= String(event.event)%>')" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> الفعالية </button>
+              </div>
+              <div class="col-md-6">
+                <button type="button" onclick="myAlert('<%= String(event.event_result)%>')" class="btn btn-default btn-sm btn-block"><i class="fa fa-user"></i> النتيجة </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%}%>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script class="u-script" type="text/javascript" src="public/js/admin.js" defer=""></script>
+  </body>
+
+</html>
